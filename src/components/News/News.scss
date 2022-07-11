@@ -1,0 +1,40 @@
+@import "@/styles/colors.scss";
+.news {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    .left-side {
+        text-transform: uppercase;  
+        text-align: center; 
+        display: inline-block;
+        width: 50%;
+        .infos {
+            p {
+                font-family: "GothamBold", arial;
+                color: $grey;
+            }
+            h1 {
+                font-size: 40px;
+                font-family: "GothamBook", arial;
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+                background-color: $primary;
+                padding: 15px 30px;
+                border-radius: 3px;
+
+            }
+        }
+    }
+    .right-side {
+        display: inline-block;
+        width: 50%;
+        img {
+            max-height: 500px;
+        }
+    }
+}

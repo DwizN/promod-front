@@ -1,0 +1,16 @@
+@import "../../../styles/colors.scss";
+
+.insurance {
+   border: 1px solid $secondary;
+   padding: 20px;
+   text-align: center;
+   .icon {
+        color: $primary;
+   }
+   .title {
+        text-transform: uppercase;
+   }
+   .description {
+        color: grey;
+   }
+}

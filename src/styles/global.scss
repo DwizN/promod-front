@@ -1,0 +1,63 @@
+@import "@/styles/colors.scss";
+@font-face {
+    font-family: "GothamBook";
+    src: local("GothamBook"),   url(../fonts/GothamBook.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: local("GothamBold"),   url(../fonts/GothamBold.ttf) format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 22px;
+    font-family: "GothamBook", arial;
+    color: $default;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: "GothamBold", arial;
+    font-weight: 200;
+    color: $default;
+}
+
+p {
+    font-size: 13px;
+    font-family: "GothamBook", arial;
+    color: $grey;
+    margin: 0 10px;
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "GothamBook", arial;  
+    text-decoration: none;
+    color: grey;
+    text-transform : uppercase;
+}
+
+ul{
+    list-style: none;
+}
+  
+
+
+.container {
+    width : 1200px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width : 100%;
+        margin: 10px;
+    }
+}
