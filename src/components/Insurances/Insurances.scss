@@ -4,14 +4,33 @@
     margin-top: 20px;
     margin-bottom: 20px;
     .insurance-component {
+        min-width: 120px;
         margin: 0 15px;
         padding: 0;
         flex: auto;
+        flex-grow: 1;
         &:first-child {
             margin-left: 0;
         }
         &:last-child {
             margin-right: 0;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .insurances {
+        width: 100%;
+        .insurance-component {
+            margin: 10px;
+            padding: 0;
+            flex: auto;
+            &:first-child {
+                margin-left: 10px;
+            }
+            &:last-child {
+                margin-right: 10px;
+            }
         }
     }
 }

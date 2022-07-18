@@ -1,0 +1,8 @@
+.instagram-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    .instagram-component {
+        flex: 1 0 auto;
+        
+    }
+}

@@ -23,7 +23,7 @@
 
 }
 .menu a{
-    border-top: 1px solid black;
+    border-top: 1px solid $lightGrey;
     display: block;
     padding: 15px;
     color: $default;
@@ -34,6 +34,38 @@
 }
 .nav{
     display:block;
+}
+
+.icon-badge-group .icon-badge-container {
+    display: inline-block;
+    margin-left:15px;
+}
+
+.icon-badge-group .icon-badge-container:first-child { 
+  margin-left:0
+}
+
+.icon-badge-container {
+    margin-top:20px;
+    position:relative;
+}
+
+.icon-badge-icon {
+    font-size: 30px;
+    position: relative;
+}
+
+.icon-badge {
+    background-color: $primary;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute; /* changed */
+    top: -10px; /* changed */
+    left: 10px; /* changed */
 }
 
 
@@ -52,7 +84,7 @@
         min-width: 180px;
     }
     .menu li{
-        float: left;
+        display:inline-block;
     }
     .menu a:hover{
         background-color: transparent;
